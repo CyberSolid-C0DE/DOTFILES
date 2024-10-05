@@ -1,0 +1,22 @@
+@theme "/usr/share/rofi/themes/android_notification.rasi"
+
+configuration {
+	modi: "window,drun,run,ssh,calc";
+	show-icons:                     true;
+	combi-modi: "drun,ssh,calc";
+	display-drun: 					"";
+	drun-display-format:            "{name}";
+}
+
+window {
+	background-color: @background;
+	border:           0;
+	padding:          5;
+	width:	      750px;
+	height:	      400px;
+	x-offset:     -15px;
+	y-offset:     200px;
+
+
+}
+
