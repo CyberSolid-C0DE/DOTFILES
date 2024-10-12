@@ -7,7 +7,6 @@ screenchange-reload = true
 
 [module/xworkspaces]
 type = internal/xworkspaces
-
 label-active = %index%
 label-active-background = ${colors.background-alt}
 label-active-underline= ${colors.lila}
@@ -28,16 +27,15 @@ label-empty-padding = 1
 type = internal/xwindow
 label = %title:0:60:...%
 
-
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume = <label-volume> <bar-volume>
-label-volume = "%{A1:systemsettings kcm_pulseaudio:}  %percentage%%{A}"
-use-ui-max = fales
+label-volume = "%{A1:systemsettings kcm_pulseaudio:}🔊 %percentage%%{A}"
+suse-ui-max = fales
 format-volume-foreground = ${colors.primary}
-label-muted = 
+label-muted = 🔈
 label-muted-foreground = ${colors.red}
-bar-volume-width = 10
+bar-volume-width = 5
 bar-volume-foreground-0 = #55aa55
 bar-volume-foreground-1 = #55aa55
 bar-volume-foreground-2 = #55aa55
@@ -46,25 +44,25 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = |
+bar-volume-indicator = 
 bar-volume-indicator-font = 2
-bar-volume-fill = ─
+bar-volume-fill = -
 bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-empty = -
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "%{A1:plasma-systemmonitor:} %{A}"
+format-prefix = "%{A1:plasma-systemmonitor:}💾 %{A}"
 format-prefix-foreground = ${colors.primary}
 label = %percentage_used:2%%
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "%{A1:plasma-systemmonitor:} %{A}"
+format-prefix = "%{A1:plasma-systemmonitor:}💡 %{A}"
 format-prefix-foreground = ${colors.primary}
 label = %percentage:2%%
 
@@ -79,9 +77,9 @@ label-foreground = ${colors.primary}
 type = custom/menu
 expand-right = true
 format-spacing = 1
-label-open = ""
+label-open = "♨"
 label-open-foreground = ${colors.gelb}
-label-close = ""
+label-close = "♨"
 
 label-close-foreground = ${colors.gelb}
 label-separator = |
@@ -116,7 +114,7 @@ menu-2-1-foreground = ${colors.foreground}
 
 ;Logout
 menu-3-0 = "Logout"
-menu-3-0-exec = loginctl terminate-user chef
+menu-3-0-exec =  
 menu-3-0-foreground = ${colors.red}
 menu-3-1 = "Cancel"
 menu-3-1-exec = menu-open-0
@@ -127,7 +125,7 @@ type = custom/script
 exec = ~/polybar-scripts/system-nvidia-smi.sh
 interval = 2
 format-prefix-foreground = ${colors.primary}
-format-prefix = "%{A1:nvidia-settings:}  %{A}"
+format-prefix = "%{A1:nvidia-settings:}🖥%{A}"
 
 [module/root]
 type = internal/fs
@@ -137,7 +135,7 @@ fixed-values = true
 spacing = 4
 warn-percentage = 75
 format-mounted-prefix-foreground =  ${colors.primary}
-format-mounted-prefix = %{A1:dolphin /:}📁 Chef %{A}
+format-mounted-prefix = %{A1:dolphin /:}📁 %{A}
 label-mounted = %percentage_used%% of %total%
 format-unmounted = <label-unmounted>
 label-unmounted = %mountpoint%: not mounted
@@ -151,8 +149,8 @@ fixed-values = true
 spacing = 4
 warn-percentage = 75
 format-mounted-prefix-foreground =  ${colors.primary}
-format-mounted-prefix = %{A1:dolphin /mnt/GamesBackUps/:}🎮 Games %{A}
-label-mounted = %percentage_used%% of %total%
+format-mounted-prefix = %{A1:dolphin /mnt/GamesBackUps/:}🎮 %{A}
+label-mounted = %percentage_used%% 
 format-unmounted = <label-unmounted>
 label-unmounted = %mountpoint%: not mounted
 label-unmounted-foreground = #55
@@ -162,11 +160,11 @@ type = internal/fs
 mount-0 = /mnt/BackUps
 interval = 10
 fixed-values = true
-spacing = 4
+spacing = 0
 warn-percentage = 75
 format-mounted-prefix-foreground =  ${colors.primary}
-format-mounted-prefix = %{A1:dolphin /mnt/BackUps/:}📦 BackUp %{A}
-label-mounted = %percentage_used%% of %total%
+format-mounted-prefix = %{A1:dolphin /mnt/BackUps/:}📦 %{A}
+label-mounted =  %percentage_used%% 
 format-unmounted = <label-unmounted>
 label-unmounted = %mountpoint%: not mounted
 label-unmounted-foreground = #55
@@ -176,7 +174,7 @@ type = internal/network
 interface = wlp5s0
 interval = 1.0
 format-connected = <label-connected>
-label-connected = "%{A1:kcmshell5 networkmanagement:} %{A}"
+label-connected = %{A1:kcmshell5 networkmanagement:}🌐%{A} 
 label-connected-background = ${colors.background}
 label-connected-foreground = ${colors.primary}
 format-disconnected = <label-disconnected>
@@ -184,24 +182,16 @@ label-disconnected = "%{A1:bash ~/Scripts/Wifi:} %{A}"
 label-disconnected-background = ${colors.background}
 label-disconnected-foreground = ${colors.red}
 
+
 [module/gpu-cpu-temp]
 type = custom/script
 exec = ~/polybar-scripts/gpu-temp.sh
 ;exec-if = pgrep -x openvpn
 interval = 1.0
-format-prefix = " "
+format-prefix = "🌡"
 format-prefix-foreground = ${colors.primary}
 
 
-[module/player]
-type = custom/script
-exec = ~/polybar-scripts/player-mpris-simple.sh
-interval = 3
-click-left = playerctl play-pause &
-click-right = playerctl next &
-click-middle = playerctl previous &
-label = %output:0:50:...%
-label-foreground = ${colors.primary}
 
 [module/weather]
 type = custom/script
@@ -209,5 +199,17 @@ exec = ~/polybar-scripts/weather-plugin.sh
 tail = false
 interval = 960
 
+
+[module/networkspeed]
+type = internal/network
+interface = wlp5s0
+interval = 1.0
+label-connected = ⬇ %downspeed% ⬆ %upspeed% 
+label-connected-background = ${colors.background}
+label-connected-foreground = ${colors.foreground}
+format-disconnected = <label-disconnected>
+label-disconnected =  
+label-disconnected-background = ${colors.background}
+label-disconnected-foreground = ${colors.red}
 
 
