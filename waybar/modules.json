@@ -159,5 +159,11 @@
     "format-no-controller": ""
   },
 
+
+ "custom/hardware": {
+    "exec": "~/.config/waybar-scripts/allinone.sh",
+    "interval": 5
+    }
+
   
 }
