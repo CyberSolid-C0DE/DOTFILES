@@ -1,0 +1,52 @@
+// __        __          _                 
+// \ \      / /_ _ _   _| |__   __ _ _ __  
+//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
+//   \ V  V / (_| | |_| | |_) | (_| | |    
+//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
+//                 |___/                   
+//  
+// ----------------------------------------------------- 
+//
+[{
+    // General Settings
+    "layer": "top",
+    "margin-top": 14,
+    "margin-bottom": 0,
+    "margin-left": 14,
+    "margin-right": 14,    
+    "spacing": 0,
+    "output": "DP-1",
+
+    // Load Modules
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+
+
+    "modules-left": ["custom/appmenu","hyprland/workspaces","custom/updates"],
+    
+    "modules-center": ["hyprland/window"],
+
+    "modules-right": ["bluetooth","network", "pulseaudio", "clock" ]
+}, 
+{
+    // General Settings
+    "layer": "top",
+    "margin-top": 14,
+    "margin-bottom": 0,
+    "margin-left": 14,
+    "margin-right": 14,    
+    "spacing": 0,
+    "output": "DP-3",
+
+    // Load Modules
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+
+    "modules-left": ["custom/appmenu","hyprland/workspaces","custom/updates"],
+
+    "modules-center": ["hyprland/window"],
+
+    "modules-right": [ "custom/cpu","custom/gpu","custom/memory","custom/hardwaretemps","clock"]
+}] 
