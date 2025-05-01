@@ -1,0 +1,152 @@
+/* Allgemeine Moduleinstellungen */
+* {
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px; /* Kleinere Schriftgröße für schmalere Module */
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    min-height: 24px;
+}
+
+/* Catppuccin Mocha Farben */
+@define-color surface0   #313244;  /* Dunkelgrau */
+@define-color sky        #89dceb;  /* Helles Blau */
+@define-color peach      #fab387;  /* Helles Orange */
+@define-color green      #a6e3a1;  /* Helles Grün */
+@define-color mauve      #cba6f7;  /* Lila */
+@define-color rosewater  #f5e2e6;  /* Helles Rosa */
+@define-color mocha      #3e3b47;  /* Dunkles Mocha-Braun */
+
+/* Clock */
+#clock {
+    background-color: @mocha; /* Hintergrundfarbe Mocha */
+    color: white; /* Textfarbe */
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* Network */
+#network {
+    background-color: @mocha; /* Hintergrundfarbe Mocha */
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* PulseAudio */
+#pulseaudio {
+    background-color: @mocha; /* Hintergrundfarbe Mocha */
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* Bluetooth */
+#bluetooth {
+    background-color: @mocha; /* Hintergrundfarbe Mocha */
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* Hyprland */
+#hyprland {
+    background-color: @mocha; /* Hintergrundfarbe Mocha */
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: @mocha; /* Hintergrundfarbe Mocha */
+    color: white; /* Textfarbe */
+    margin: 0px 4px;
+    padding: 0px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+#workspaces span {
+    margin: 0px 2px;
+    padding: 0px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#workspaces button {
+    padding: 0px 3px;
+    margin: 2px 2px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    background-color: @mocha; /* Hintergrundfarbe der Buttons Mocha */
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+}
+
+#workspaces button.active {
+    background: @mauve; /* Helle Farbe für den aktiven Workspace (Lila) */
+    border-radius: 10px;
+    min-width: 30px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1.0;
+}
+
+#workspaces button:hover {
+    opacity: 0.7;
+}
+
+/* CPU */
+#custom-cpu {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* Hardware-Temperaturen */
+#custom-hardwaretemps {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* GPU */
+#custom-gpu {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* RAM */
+#custom-memory {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+/* Disk */
+#custom-disk {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#custom-appmenu {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+
+
