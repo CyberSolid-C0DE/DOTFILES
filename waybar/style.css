@@ -18,6 +18,9 @@
 @define-color mocha      #3e3b47;  /* Dunkles Mocha-Braun */
 
 /* Clock */
+
+
+
 #clock {
     background-color: @mocha; /* Hintergrundfarbe Mocha */
     color: white; /* Textfarbe */
@@ -149,4 +152,17 @@
 }
 
 
+#custom-updates {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
 
+
+#custom-hardware {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
