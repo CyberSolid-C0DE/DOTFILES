@@ -65,7 +65,7 @@
 "custom/memory": {
     "exec": "~/.config/waybar-scripts/memory_usage.sh",
     "interval": 1,
-    "return-type": "sh",
+    "return-type": "json",
     "format": "  {}",
 },
 
@@ -96,33 +96,14 @@
     "on-click-right": "~/.config/ml4w/settings/software.sh"
   },
 
-      // ChatGPT Launcher
-  "custom/chatgpt": {
-    "format": " ",
-    "on-click": "~/.config/ml4w/settings/ai.sh",
-    "tooltip-format": "AI Support"
-  },
-
   // Rofi Application Launcher
   "custom/appmenu": {
-    // START APPS LABEL
     "format": "Apps",
-    // END APPS LABEL
     "on-click": "sleep 0.2;pkill rofi || rofi -show drun -replace",
     "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
 
-  // Rofi Application Launcher
-  "custom/appmenuicon": {
-    "format": "",
-    "on-click": "sleep 0.2;rofi -show drun -replace",
-    "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
-    "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
-  },
-
-  
-  
   // Clock
   "clock": {
     "format": "{:%H:%M %a}",
