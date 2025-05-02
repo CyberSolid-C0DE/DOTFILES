@@ -37,3 +37,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# python3 installieren eine umgebung einrichten und darin yfinance installieren!
