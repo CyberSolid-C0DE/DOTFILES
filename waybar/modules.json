@@ -70,13 +70,12 @@
 },
 
 
-"custom/disk": {
-    "exec": "~/.config/waybar-scripts/disk_usage.sh",
-    "interval": 20,
-    "return-type": "json",
-
-
-},
+"disk": {
+    "interval": 30,
+    "format": "   {percentage_used}% ",
+    "path": "/",
+    "on-click": "~/.config/ml4w/settings/system-monitor.sh"
+  },
 
 
 
@@ -85,7 +84,6 @@
 
 
   
-  // Updates Count
   "custom/updates": {
     "format": "  {}",
     "escape": true,
@@ -96,7 +94,6 @@
     "on-click-right": "~/.config/ml4w/settings/software.sh"
   },
 
-  // Rofi Application Launcher
   "custom/appmenu": {
     "format": "Apps",
     "on-click": "sleep 0.2;pkill rofi || rofi -show drun -replace",
@@ -104,7 +101,6 @@
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
 
-  // Clock
   "clock": {
     "format": "{:%H:%M %a}",
     "on-click": "flatpak run com.ml4w.calendar",
@@ -113,7 +109,6 @@
   },
 
   
-  // Network
   "network": {
     "format": "{ifname}",
     "format-wifi": " {essid} ({signalStrength}%)",
@@ -128,7 +123,7 @@
     "on-click-right": "~/.config/ml4w/scripts/nm-applet.sh toggle",
   },
 
-  // Pulseaudio
+
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{icon}  {volume}%",
@@ -149,24 +144,29 @@
     "on-click": "pavucontrol"
   },
 
-  // Bluetooth
-  "bluetooth": {
+    "bluetooth": {
     "format": " {status}",
     "format-disabled": "",
     "format-off": "",
     "interval": 30,
     "on-click": "blueman-manager",
     "format-no-controller": ""
-  },
+    },
 
 
- "custom/hardware": {
+    "custom/hardware": {
     "exec": "~/.config/waybar-scripts/allinone.sh",
     "markup": "pango",
     "format": "{}",
     "interval": 5
     },
 
+  "custom/nvidia_stock": {
+  "exec": "python3 ~/.config/waybar-scripts/nvidia_stock.py",
+  "interval": 300,
+  "format": "{}",
+  "tooltip": false
+  },
 
-  
+
 }
