@@ -162,8 +162,11 @@
 
  "custom/hardware": {
     "exec": "~/.config/waybar-scripts/allinone.sh",
+    "markup": "pango",
+    "format": "{}",
     "interval": 5
-    }
+    },
+
 
   
 }
