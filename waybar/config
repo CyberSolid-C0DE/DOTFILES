@@ -48,5 +48,5 @@
 
     "modules-center": ["custom/hardware"],
 
-    "modules-right": [ "custom/cpu","custom/gpu","custom/memory","custom/hardwaretemps","clock"]
+    "modules-right": ["disk" ,"custom/nvidia_stock","clock"]
 }] 
