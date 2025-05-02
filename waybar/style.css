@@ -17,7 +17,11 @@
 @define-color rosewater  #f5e2e6;  /* Helles Rosa */
 @define-color mocha      #3e3b47;  /* Dunkles Mocha-Braun */
 
-/* Clock */
+
+/* //////////////////////////////////////////////// */
+/* ////////// Allgemeine Module /////////////////// */
+/* //////////////////////////////////////////////// */
+
 
 
 
@@ -28,7 +32,6 @@
     padding: 4px 8px;
 }
 
-/* Network */
 #network {
     background-color: @mocha; /* Hintergrundfarbe Mocha */
     color: white;
@@ -36,7 +39,6 @@
     padding: 4px 8px;
 }
 
-/* PulseAudio */
 #pulseaudio {
     background-color: @mocha; /* Hintergrundfarbe Mocha */
     color: white;
@@ -44,7 +46,6 @@
     padding: 4px 8px;
 }
 
-/* Bluetooth */
 #bluetooth {
     background-color: @mocha; /* Hintergrundfarbe Mocha */
     color: white;
@@ -52,7 +53,6 @@
     padding: 4px 8px;
 }
 
-/* Hyprland */
 #hyprland {
     background-color: @mocha; /* Hintergrundfarbe Mocha */
     color: white;
@@ -60,7 +60,6 @@
     padding: 4px 8px;
 }
 
-/* Workspaces */
 #workspaces {
     background-color: @mocha; /* Hintergrundfarbe Mocha */
     color: white; /* Textfarbe */
@@ -104,7 +103,10 @@
     opacity: 0.7;
 }
 
-/* CPU */
+/* //////////////////////////////////////////////// */
+/* ////////////// Custom Hardware  //////////////// */
+/* //////////////////////////////////////////////// */
+
 #custom-cpu {
     background-color: @mocha;
     color: white;
@@ -112,7 +114,6 @@
     padding: 4px 8px;
 }
 
-/* Hardware-Temperaturen */
 #custom-hardwaretemps {
     background-color: @mocha;
     color: white;
@@ -120,7 +121,6 @@
     padding: 4px 8px;
 }
 
-/* GPU */
 #custom-gpu {
     background-color: @mocha;
     color: white;
@@ -128,7 +128,6 @@
     padding: 4px 8px;
 }
 
-/* RAM */
 #custom-memory {
     background-color: @mocha;
     color: white;
@@ -136,13 +135,32 @@
     padding: 4px 8px;
 }
 
-/* Disk */
 #custom-disk {
     background-color: @mocha;
     color: white;
     margin: 0px 8px;
     padding: 4px 8px;
 }
+
+#custom-hardware {
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#disk{ 
+    background-color: @mocha;
+    color: white;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+
+/* //////////////////////////////////////////////// */
+/* //////// Custom  Appmenu und updates /////////// */
+/* //////////////////////////////////////////////// */
+
 
 #custom-appmenu {
     background-color: @mocha;
@@ -151,7 +169,6 @@
     padding: 4px 8px;
 }
 
-
 #custom-updates {
     background-color: @mocha;
     color: white;
@@ -159,8 +176,12 @@
     padding: 4px 8px;
 }
 
+/* //////////////////////////////////////////////// */
+/* //////// Nvidia /  /////////// */
+/* //////////////////////////////////////////////// */
 
-#custom-hardware {
+
+#custom-nvidia_stock {
     background-color: @mocha;
     color: white;
     margin: 0px 8px;
