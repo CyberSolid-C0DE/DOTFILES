@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # CPU-Auslastung (%)
-cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}')
+cpu_usage=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{printf "%.0f", 100 - $1}')
 cpu_usage=$(printf "%.0f" "$cpu_usage")
 
 # CPU-Temperatur
