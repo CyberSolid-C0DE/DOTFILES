@@ -69,13 +69,12 @@
     "format": "  {}",
 },
 
+"custom/disk": {
+  "interval": 30,
+  "exec": "~/.config/waybar-scripts/disk_usage.sh",
+  "return-type": "json",
 
-"disk": {
-    "interval": 30,
-    "format": "   {percentage_used}% ",
-    "path": "/",
-    "on-click": "~/.config/ml4w/settings/system-monitor.sh"
-  },
+},
 
 
 
