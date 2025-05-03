@@ -1,0 +1,95 @@
+/*
+          _                         _
+__      _| | ___   __ _  ___  _   _| |_
+\ \ /\ / / |/ _ \ / _` |/ _ \| | | | __|
+ \ V  V /| | (_) | (_| | (_) | |_| | |_
+  \_/\_/ |_|\___/ \__, |\___/ \__,_|\__|
+                  |___/
+
+-----------------------------------------------------
+*/
+
+/* -----------------------------------------------------
+ * Import Pywal colors
+ * ----------------------------------------------------- */
+@import 'colors.css';
+
+/* -----------------------------------------------------
+ * General
+ * ----------------------------------------------------- */
+
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(30, 30, 46, 0.90);
+}
+
+
+button {
+	border-radius: 0;
+	border-color: #cba6f7;
+	text-decoration-color: #cdd6f4;
+	color: #cdd6f4;
+	background-color: #181825;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	/* 20% Overlay 2, 80% mantle */
+	background-color: rgb(48, 50, 66);
+	outline-style: none;
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+/*
+-----------------------------------------------------
+Buttons
+-----------------------------------------------------
+*/
+
+#lock {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/lock.png"));
+}
+
+#logout {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/logout.png"));
+}
+
+#suspend {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/suspend.png"));
+}
+
+#hibernate {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/hibernate.png"));
+}
+
+#shutdown {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/shutdown.png"));
+}
+
+#reboot {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/reboot.png"));
+}
