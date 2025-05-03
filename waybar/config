@@ -48,5 +48,5 @@
 
     "modules-center": ["custom/hardware"],
 
-    "modules-right": ["disk" ,"custom/nvidia_stock","clock"]
+    "modules-right": ["custom/disk" ,"custom/nvidia_stock","clock"]
 }] 
