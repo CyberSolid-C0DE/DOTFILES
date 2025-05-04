@@ -1,5 +1,5 @@
 configuration{
-    modi: "rofi -show p -modi p:~/.local/bin/rofi-sound-output-chooser,drun,run,window";
+    modi: "rofi -show p -modi p:~/.local/bin/shortcut_helper.sh, p:~/.local/bin/rofi-sound-output-chooser,drun";
     lines: 5;
     font: "Sarasa Nerd Font 14";
     show-icons: true;
