@@ -53,8 +53,8 @@
     padding: 4px 8px;
 }
 
-#hyprland {
-    background-color: @mocha; /* Hintergrundfarbe Mocha */
+#window {
+    
     color: white;
     margin: 0px 8px;
     padding: 4px 8px;
