@@ -86,13 +86,11 @@
 
   
   "custom/updates": {
-    "format": "  {}",
+    "format": "{}",
     "escape": true,
-    "return-type": "json",
-    "exec": "~/.config/ml4w/scripts/updates.sh",
+    "return-type": "sh",
+    "exec": "~/.config/waybar-scripts/updates.sh",
     "interval": 1800,
-    "on-click": "~/.config/ml4w/settings/installupdates.sh",
-    "on-click-right": "~/.config/ml4w/settings/software.sh"
   },
 
   "custom/appmenu": {
