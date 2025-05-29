@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Alle verfügbaren Themes
-VALID_THEMES=("chef" "frappe" "latte" "macchiato" "macho")
+VALID_THEMES=("chef" "frappe" "latte" "macchiato" "mocha")
 
 # Theme-Pfad-Grundlage
 THEME_DIR="$HOME/.config/waybar/themes"
