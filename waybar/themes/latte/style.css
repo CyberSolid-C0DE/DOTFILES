@@ -1,0 +1,197 @@
+/* Allgemeine Moduleinstellungen */
+* {
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px; /* Kleinere Schriftgröße für schmalere Module */
+    border: none;
+    border-radius: 8px;
+    min-height: 24px;
+}
+
+
+#waybar {
+    background: linear-gradient(to right, #dc8a78, #dd7878);
+    color: #ffffff;
+    border: none;
+    padding: 0 10px;
+}
+
+
+/* Catppuccin Base Farben */
+@define-color   Rosewater #dc8a78;
+@define-color   Flamingo  #dd7878;
+@define-color   Pink      #ea76cb;
+@define-color   Mauve     #8839ef;
+@define-color   Red       #d20f39;
+@define-color   Maroon    #e64553;
+@define-color   Peach     #fe640b;
+@define-color   Yellow    #df8e1d;
+@define-color   Green     #40a02b;
+@define-color   Teal      #179299;
+@define-color   Sky       #04a5e5;
+@define-color   Sapphire  #209fb5;
+@define-color   Blue      #1e66f5;
+@define-color   Lavender  #7287fd;
+@define-color   Text      #4c4f69;
+@define-color   Subtext1  #5c5f77;
+@define-color   Subtext0  #6c6f85;
+@define-color   Overlay2  #7c7f93;
+@define-color   Overlay1  #8c8fa1;
+@define-color   Overlay0  #9ca0b0;
+@define-color   Surface2  #acb0be;
+@define-color   Surface1  #bcc0cc;
+@define-color   Surface0  #ccd0da;
+@define-color   Base      #eff1f5;
+@define-color   Mantle    #e6e9ef;
+@define-color   Crust     #dce0e8;
+
+
+/* //////////////////////////////////////////////// */
+/* ////////// Allgemeine Module /////////////////// */
+/* //////////////////////////////////////////////// */
+
+
+
+
+#clock {
+    background-color: transparent; /* Hintergrundfarbe Mocha */
+    color: @Crust; /* Textfarbe */
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#network {
+    background-color: @transparent; /* Hintergrundfarbe Mocha */
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#pulseaudio {
+    background-color: @transparent; /* Hintergrundfarbe Mocha */
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#bluetooth {
+    background-color: @transparent; /* Hintergrundfarbe Mocha */
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#window {
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#workspaces {
+    background-color: @transparent; /* Hintergrundfarbe Base */
+    color: @Crust; /* Textfarbe */
+    margin: 0px 4px;
+    padding: 0px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+#workspaces span {
+    margin: 0px 2px;
+    padding: 0px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#workspaces button {
+    padding: 0px 3px;
+    margin: 2px 2px;
+    border-radius: 10px;
+    border: 0px;
+    color: @Crust;
+    background-color: @transparent; /* Hintergrundfarbe der Buttons Mocha */
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+}
+
+#workspaces button.active {
+    background: @Yellow; /* Helle Farbe für den aktiven Workspace (Lila) */
+    border-radius: 10px;
+    min-width: 30px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1.0;
+}
+
+#workspaces button:hover {
+    opacity: 0.7;
+}
+
+#workspaces button:not(.empty) {
+  color: @Crust;
+  opacity: 1.0;
+}
+
+/* //////////////////////////////////////////////// */
+/* ////////////// Custom Hardware  //////////////// */
+/* //////////////////////////////////////////////// */
+
+
+#custom-disk {
+    background-color: @transparent;
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#custom-hardware {
+    background-color: @transparent;
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+
+
+
+/* //////////////////////////////////////////////// */
+/* //////// Custom  Appmenu und updates /////////// */
+/* //////////////////////////////////////////////// */
+
+
+#custom-appmenu {
+    background-color: @transparent;
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#custom-updates {
+    background-color: @transparent;
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+#custom-VM {
+    background-color: @transparent;
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
+
+
+
+/* //////////////////////////////////////////////// */
+/* //////// Nvidia /  /////////// */
+/* //////////////////////////////////////////////// */
+
+
+#custom-nvidia_stock {
+    background-color: @transparent;
+    color: @Crust;
+    margin: 0px 8px;
+    padding: 4px 8px;
+}
