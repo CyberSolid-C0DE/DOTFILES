@@ -2,7 +2,7 @@
 echo -en "\x00prompt\x1f  Waybar Themes\n"
 
 # Statische Liste (du kannst auch dynamisch machen, siehe unten)
-THEMES=("chef" "frappe" "latte" "macchiato" "macho")
+THEMES=("chef" "frappe" "latte" "macchiato" "mocha")
 
 if [[ -z "$1" ]]; then
   # Keine Auswahl übergeben – gib Theme-Liste aus (für Rofi)
