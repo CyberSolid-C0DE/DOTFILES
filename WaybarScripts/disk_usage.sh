@@ -19,8 +19,7 @@ disk_info() {
 
 # Infos holen mit farbigen Icons
 root_info=$(disk_info "/" "" "#89b4fa")
-backup_info=$(disk_info "/mnt/ChefBackup" "" "#a6e3a1")
 
 games_info=$(disk_info "/mnt/Games/" " " "#cba6f7")
 # Ausgabe im JSON-Format für Waybar
-echo "{\"text\": \"$root_info | $games_info | $backup_info\", \"tooltip\": \"System: /, Backup: /mnt/ChefBackup\"}"
+echo "{\"text\": \"$root_info | $games_info  \", \"tooltip\": \"System: /, Backup: /mnt/ChefBackup\"}"
