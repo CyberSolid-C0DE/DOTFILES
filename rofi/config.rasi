@@ -1,5 +1,5 @@
 configuration{
-    modi: "rofi -show p -modi p:~/.local/bin/shortcut_helper.sh, p:~/.local/bin/rofi-sound-output-chooser,drun,p:~/.config/waybar-scripts/theme-picker.sh";
+    modi: "rofi -show p -modi p:~/.local/bin/shortcut_helper.sh, p:~/.local/bin/rofi-sound-output-chooser,p:~/.local/bin/websearch.sh,drun,p:~/.config/waybar-scripts/theme-picker.sh";
     lines: 5;
     font: "Sarasa Nerd Font 14";
     show-icons: true;
